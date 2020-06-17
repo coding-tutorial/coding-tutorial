@@ -28,19 +28,29 @@ body
   
   
 <script>
+function disableButtons() {
+  document.querySelectorAll('.button').forEach(b=>{
+    b.disabled = true;
+  });
+}
 function myFunction0() {
+  disableButtons();
   document.getElementById("demo0").innerHTML = "Wrong";
 }
 function myFunction1() {
+  disableButtons();
   document.getElementById("demo1").innerHTML = "Wrong";
 }
 function myFunction2() {
+  disableButtons();
   document.getElementById("demo2").innerHTML = "Right!!";
 }
 function myFunction3() {
+  disableButtons();
   document.getElementById("demo3").innerHTML = "Wrong";
 }
 function myFunction4() {
+  disableButtons();
   document.getElementById("demo4").innerHTML = "Wrong";
 }
   
